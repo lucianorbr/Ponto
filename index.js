@@ -2,7 +2,6 @@ const puppeteer = require('puppeteer');
 const CronJob = require('cron').CronJob
 const job = new CronJob('* * * * *', () => {
 
-
     (async () => {
         const browser = await puppeteer.launch({
             headless: false
@@ -14,7 +13,7 @@ const job = new CronJob('* * * * *', () => {
         await page.type('input[name="user_session[password]"]', 'senha', {delay: 100});
         await page.keyboard.press('Enter', {delay: 200});
 
-        await browser.close()
+        await browser.close({delay: 500})
 
     })();
 },null, true, 'America/Sao_Paulo')
