@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const user = require("./user.json");
+const axios = require('axios');
 
 const CronJob = require('cron').CronJob
 
