@@ -1,4 +1,4 @@
-<h2> Api para marcação automática de ponto empresa</h2>
+<h2> Api para marcação automática de ponto empresarial</h2>
 
 <p>Sistema simples em NodeJS. Utilizando as bibliotecas Puppeteer e Axios do NodeJS. </p>
 
