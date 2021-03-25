@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "yarn": "yarn"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,9 @@
     "node": "^13.12.0",
     "npm": "^7.7.0",
     "ponto": "^1.0.0",
-    "puppeteer": "^2.1.1"
+    "puppeteer": "^2.1.1",
+    "yarn": "^1.22.10",
+    "yarn-npm": "^1.0.12",
+    "yarn-run": "^1.1.0"
   }
 }
