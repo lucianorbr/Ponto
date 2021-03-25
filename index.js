@@ -4,7 +4,7 @@ const axios = require('axios');
 
 const CronJob = require('cron').CronJob
 
-const entrada = new CronJob('56 12 * * *', () => {
+const entrada = new CronJob('44 10 * * *', () => {
 
     (async () => {
         const browser = await puppeteer.launch({
@@ -16,6 +16,7 @@ const entrada = new CronJob('56 12 * * *', () => {
         await page.type('input[name="user_session[email]"]', user.login, {delay: 100});
         await page.type('input[name="user_session[password]"]', user.password, {delay: 100});
         await page.keyboard.press('Enter', {delay: 200});
+        await page.click({delay: 200}, "button_end_period_one")
 
         //await browser.close({delay: 500})
 
